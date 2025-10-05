@@ -1,25 +1,25 @@
 class LuaBundler < Formula
   desc "Lua script bundler for Roblox development"
   homepage "https://github.com/alfin-efendy/lua-bundler"
-  version "1.4.1"
+  version "1.5.0"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.4.1/lua-bundler-darwin-arm64"
-      sha256 "6aab997699b01f45df923d41edfa97d0773f0fb949cdd82bc11c64df8d5a0a72"
+      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.5.0/lua-bundler-darwin-arm64"
+      sha256 "d8a06623511d81476fa985445f40c065bebaebffa8ba00bbb6d084766af56b4a"
     else
-      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.4.1/lua-bundler-darwin-amd64"
-      sha256 "15394a8daf1c36ad78b866bf63bb7c69ccfeb0cf5cdae706641ddb3df781c40d"
+      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.5.0/lua-bundler-darwin-amd64"
+      sha256 "d8f0a4bd6078a8319737f59747f335e88ee2e434ff82c3e0ed3488bf2266f65a"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.4.1/lua-bundler-linux-arm64"
-      sha256 "933919d6c1f49a7de314d8a599a391695883516a1157b41ced9a6d158c6df0ec"
+      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.5.0/lua-bundler-linux-arm64"
+      sha256 "a3f4cbfef965d7c649c697537914bd0fec4bb98006c332cbec5ff757aa484e1a"
     else
-      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.4.1/lua-bundler-linux-amd64"
-      sha256 "fbb4a2f1fd8924bdb18204cfb974e0cb0749a0ef568e827216f2023ead648bb3"
+      url "https://github.com/alfin-efendy/lua-bundler/releases/download/v1.5.0/lua-bundler-linux-amd64"
+      sha256 "1a3dca98e0848784a0a86ddc83effb76be513dd3a1b27542480066217f50d322"
     end
   end
 
